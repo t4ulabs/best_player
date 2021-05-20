@@ -4,9 +4,11 @@ import 'dart:io';
 import 'dart:math';
 
 // Flutter imports:
+import 'package:best_player/src/configuration/better_player_controller_event.dart';
 import 'package:best_player/src/controls/better_player_cupertino_controls.dart';
 import 'package:best_player/src/controls/better_player_material_controls.dart';
 import 'package:best_player/src/subtitles/better_player_subtitles_drawer.dart';
+import 'package:best_player/src/video_player/video_player.dart';
 import 'package:flutter/material.dart';
 
 import '../../better_player.dart';
