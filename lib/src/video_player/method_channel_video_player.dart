@@ -8,7 +8,7 @@ import 'dart:async';
 import 'dart:ui';
 
 // Flutter imports:
-import 'package:better_player/src/core/better_player_utils.dart';
+import 'package:best_player/src/core/better_player_utils.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 

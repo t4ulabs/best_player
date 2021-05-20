@@ -1,5 +1,6 @@
-import 'package:better_player/src/hls/hls_parser/format.dart';
 import 'package:flutter/cupertino.dart';
+
+import 'format.dart';
 
 class Rendition {
   Rendition(

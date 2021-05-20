@@ -1,5 +1,7 @@
-import 'package:better_player/src/hls/hls_parser/exception.dart';
-import 'package:better_player/src/hls/hls_parser/mime_types.dart';
+
+
+import 'exception.dart';
+import 'mime_types.dart';
 
 class LibUtil {
   static bool startsWith(List<int> source, List<int> checker) {

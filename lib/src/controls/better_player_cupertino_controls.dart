@@ -3,16 +3,16 @@ import 'dart:async';
 import 'dart:ui' as ui;
 
 // Flutter imports:
-import 'package:better_player/src/configuration/better_player_controls_configuration.dart';
+import 'package:best_player/src/core/better_player_utils.dart';
+import 'package:best_player/src/video_player/video_player.dart';
 import 'package:flutter/material.dart';
 
 // Project imports:
-import 'package:better_player/src/controls/better_player_controls_state.dart';
-import 'package:better_player/src/controls/better_player_cupertino_progress_bar.dart';
-import 'package:better_player/src/controls/better_player_progress_colors.dart';
-import 'package:better_player/src/core/better_player_controller.dart';
-import 'package:better_player/src/core/better_player_utils.dart';
-import 'package:better_player/src/video_player/video_player.dart';
+
+
+import '../../better_player.dart';
+import 'better_player_controls_state.dart';
+import 'better_player_cupertino_progress_bar.dart';
 
 class BetterPlayerCupertinoControls extends StatefulWidget {
   ///Callback used to send information if player bar is hidden or not

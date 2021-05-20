@@ -1,5 +1,6 @@
 // Project imports:
-import 'package:better_player/src/configuration/better_player_event_type.dart';
+
+import '../../better_player.dart';
 
 ///Event that happens in player. It can be used to determine current player state
 ///on higher layer.

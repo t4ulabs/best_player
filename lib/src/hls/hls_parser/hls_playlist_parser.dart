@@ -1,23 +1,25 @@
 import 'dart:convert';
 import 'dart:typed_data';
 
-import 'package:better_player/src/hls/hls_parser/drm_init_data.dart';
-import 'package:better_player/src/hls/hls_parser/exception.dart';
-import 'package:better_player/src/hls/hls_parser/format.dart';
-import 'package:better_player/src/hls/hls_parser/hls_master_playlist.dart';
-import 'package:better_player/src/hls/hls_parser/hls_media_playlist.dart';
-import 'package:better_player/src/hls/hls_parser/hls_track_metadata_entry.dart';
-import 'package:better_player/src/hls/hls_parser/metadata.dart';
-import 'package:better_player/src/hls/hls_parser/mime_types.dart';
-import 'package:better_player/src/hls/hls_parser/playlist.dart';
-import 'package:better_player/src/hls/hls_parser/rendition.dart';
-import 'package:better_player/src/hls/hls_parser/scheme_data.dart';
-import 'package:better_player/src/hls/hls_parser/segment.dart';
-import 'package:better_player/src/hls/hls_parser/util.dart';
-import 'package:better_player/src/hls/hls_parser/variant.dart';
-import 'package:better_player/src/hls/hls_parser/variant_info.dart';
+
 import 'package:collection/collection.dart' show IterableExtension;
 import 'package:flutter/cupertino.dart';
+
+import 'drm_init_data.dart';
+import 'exception.dart';
+import 'format.dart';
+import 'hls_master_playlist.dart';
+import 'hls_media_playlist.dart';
+import 'hls_track_metadata_entry.dart';
+import 'metadata.dart';
+import 'mime_types.dart';
+import 'playlist.dart';
+import 'rendition.dart';
+import 'scheme_data.dart';
+import 'segment.dart';
+import 'util.dart';
+import 'variant.dart';
+import 'variant_info.dart';
 
 class HlsPlaylistParser {
   HlsPlaylistParser(this.masterPlaylist);

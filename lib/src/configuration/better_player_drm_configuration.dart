@@ -1,4 +1,5 @@
-import 'package:better_player/src/configuration/better_player_drm_type.dart';
+
+import '../../better_player.dart';
 
 ///Configuration of DRM used to protect data source
 class BetterPlayerDrmConfiguration {
