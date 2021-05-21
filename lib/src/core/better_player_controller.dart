@@ -617,8 +617,7 @@ class BetterPlayerController {
     if (!enabled) {
       _controlsVisibilityStreamController.add(false);
     }
-    //_controlsEnabled = enabled;
-    _controlsEnabled = false;
+    _controlsEnabled = enabled;
   }
 
   ///Internal method, used to trigger CONTROLS_VISIBLE or CONTROLS_HIDDEN event
@@ -674,8 +673,7 @@ class BetterPlayerController {
         exitFullScreen();
       }
       if (_wasControlsEnabledBeforePiP) {
-        //setControlsEnabled(true);
-        setControlsEnabled(false);
+        setControlsEnabled(true);
       }
       videoPlayerController?.refresh();
     }
@@ -999,8 +997,7 @@ class BetterPlayerController {
 
   ///Setup controls always visible mode
   void setControlsAlwaysVisible(bool controlsAlwaysVisible) {
-    //_controlsAlwaysVisible = controlsAlwaysVisible;
-    _controlsAlwaysVisible = false;
+    _controlsAlwaysVisible = controlsAlwaysVisible;
     _controlsVisibilityStreamController.add(controlsAlwaysVisible);
   }
 
