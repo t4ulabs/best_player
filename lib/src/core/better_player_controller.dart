@@ -617,7 +617,8 @@ class BetterPlayerController {
     if (!enabled) {
       _controlsVisibilityStreamController.add(false);
     }
-    _controlsEnabled = enabled;
+    //_controlsEnabled = enabled;
+    _controlsEnabled = false;
   }
 
   ///Internal method, used to trigger CONTROLS_VISIBLE or CONTROLS_HIDDEN event
