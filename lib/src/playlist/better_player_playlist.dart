@@ -42,6 +42,9 @@ class BetterPlayerPlaylistState extends State<BetterPlayerPlaylist> {
         betterPlayerConfiguration: widget.betterPlayerConfiguration,
         betterPlayerPlaylistConfiguration:
             widget.betterPlayerPlaylistConfiguration);
+    //Disable the black bar of pause and play ... on ios
+    _betterPlayerController.setControlsEnabled(false);
+    _betterPlayerController.setControlsAlwaysVisible(false);
     super.initState();
   }
 
