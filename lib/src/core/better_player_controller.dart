@@ -673,7 +673,8 @@ class BetterPlayerController {
         exitFullScreen();
       }
       if (_wasControlsEnabledBeforePiP) {
-        setControlsEnabled(true);
+        //setControlsEnabled(true);
+        setControlsEnabled(false);
       }
       videoPlayerController?.refresh();
     }
@@ -997,7 +998,8 @@ class BetterPlayerController {
 
   ///Setup controls always visible mode
   void setControlsAlwaysVisible(bool controlsAlwaysVisible) {
-    _controlsAlwaysVisible = controlsAlwaysVisible;
+    //_controlsAlwaysVisible = controlsAlwaysVisible;
+    _controlsAlwaysVisible = false;
     _controlsVisibilityStreamController.add(controlsAlwaysVisible);
   }
 
